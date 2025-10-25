@@ -6,24 +6,33 @@
     <title>TechJobs - Inicio</title>
     <meta name="description" content="Encuentra las mejores ofertas de empleo en tecnología con TechJobs.">
     <meta name="keywords" content="empleo, tecnología, ofertas de trabajo, TechJobs">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <header>
         <nav>
             <h1>TechJobs</h1>
-            <a href="">Inicio</a>
-            <a href="">Empleos</a>
-            <a href="">Empresas</a>
-            <a href="">Salarios</a>
-            <form role="search">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-search"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" /><path d="M21 21l-6 -6" /></svg>
-                <input type="search" placeholder="Buscar empleos...">
-            </form>
-            <button>Publicar un Empleo</button>
-            <button>Iniciar Sesión</button>
+
+            <div class="nav-links">
+                <a href="">Inicio</a>
+                <a href="">Empleos</a>
+                <a href="">Empresas</a>
+                <a href="">Salarios</a>
+            </div>
+
+            <div class="nav-actions">
+                <form class="nav-form" role="search">
+                    <svg class="svg-icon-search" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-search"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" /><path d="M21 21l-6 -6" /></svg>
+                    <input type="search" placeholder="Buscar empleos...">
+                </form>
+
+                <button class="nav-buttons">Publicar un Empleo</button>
+                <button class="nav-buttons">Iniciar Sesión</button>
+            </div>
         </nav>
     </header>
+
     <main>
         <section class="Encabezado">
             <img src="./imagen-encabezado.png" alt="Imagen de tecnología">
@@ -35,6 +44,7 @@
                 <button type="submit">Buscar!</button>
             </form>
         </section>
+
         <section class="Empleos_Destacados">
             <h2>Empleos Destacados</h2>
             <article>
@@ -53,7 +63,6 @@
                 <a href="">Ver Detalles</a>
             </article>
         </section>
-
     </main>
     <footer>
         <small>&copy; 2023 TechJobs. Todos los derechos reservados.</small>
