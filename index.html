@@ -35,40 +35,48 @@
 
     <main>
         <section class="Encabezado">
-            <img src="./imagen-encabezado.png" alt="Imagen de tecnología">
-            <h2>Encuentra tu próximo empleo en tecnología</h2>
-            <p>Explora miles de empleos en empresas innovadoras. Tu próximo desafío profesional está a solo un clic.</p>
-            <form role="search">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-search"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" /><path d="M21 21l-6 -6" /></svg>
-                <input type="text" placeholder="Buscar por título, habilidad o empresa"/>
-                <button type="submit">Buscar!</button>
-            </form>
+            <img class="imagen-encabezado" src="./imagen-encabezado.png" alt="Imagen de tecnología">
+            <div class="Encabezado-elementos">
+                <h2>Encuentra tu próximo empleo en tecnología</h2>
+                <p>Explora miles de empleos en empresas innovadoras. Tu próximo desafío profesional está a solo un clic.</p>
+                <div class="actions-encabezado">
+                    <form role="search">
+                        <svg class="svg-icon-search" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-search"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" /><path d="M21 21l-6 -6" /></svg>
+                        <input type="text" placeholder="Buscar por título, habilidad o empresa"/>
+                        <button type="submit">Buscar!</button>
+                    </form>
+                </div>
+            </div>
         </section>
 
-        <section class="Empleos_Destacados">
+        <section class="Empleos-Destacados">
             <h2>Empleos Destacados</h2>
-            <article>
-                <h3>Ingeniero de Software Senior</h3>
-                <p>Empresa en tecnología lider busca un Ingeniero de Software Senior con experiencia en desarrollo de aplicaciones web.</p>
-                <a href="">Ver Detalles</a>
-            </article>
-            <article>
-                <h3>Lider de equipo de desarrollo</h3>
-                <p>Buscamos un líder de equipo de desarrollo con experiencia en gestión de proyectos y habilidades técnicas sólidas.</p>
-                <a href="">Ver Detalles</a>
-            </article>
-            <article>
-                <h3>Analista de Datos</h3>
-                <p>Se busca un Analista de Datos con experiencia en herramientas de visualización y análisis de datos.</p>
-                <a href="">Ver Detalles</a>
-            </article>
+            <div class="Article-Empleos-Destacados">
+                <article>
+                    <h3>Ingeniero de Software Senior</h3>
+                    <p>Empresa en tecnología lider busca un Ingeniero de Software Senior con experiencia en desarrollo de aplicaciones web.</p>
+                    <a href="">Ver Detalles</a>
+                </article>
+                <article>
+                    <h3>Lider de equipo de desarrollo</h3>
+                    <p>Buscamos un líder de equipo de desarrollo con experiencia en gestión de proyectos y habilidades técnicas sólidas.</p>
+                    <a href="">Ver Detalles</a>
+                </article>
+                <article>
+                    <h3>Analista de Datos</h3>
+                    <p>Se busca un Analista de Datos con experiencia en herramientas de visualización y análisis de datos.</p>
+                    <a href="">Ver Detalles</a>
+                </article>
+            </div>
         </section>
     </main>
     <footer>
         <small>&copy; 2023 TechJobs. Todos los derechos reservados.</small>
-        <a href="">Terminos</a>
-        <a href="">Privacidad</a>
-        <a href="">Contacto</a>
+        <div class="footer-links">
+            <a href="">Terminos</a>
+            <a href="">Privacidad</a>
+            <a href="">Contacto</a>
+        </div>
     </footer>
 </body>
 </html>
