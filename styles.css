@@ -5,14 +5,17 @@
     --background-dark: #101922;
     --background-light: #f6f7f8;
 
-    /*Buttons colors*/
+    /*Buttons and inputs*/
     --buttons-color: #007BFF;
     --buttons-hover-color: #0056b3;
+    --input-color: #1F2937;
+    --input-placeholder-color: #CDC8C5;
 
     /*Font colors*/
     --font-color-light: #f6f7f8;
     --font-color-dark: #101922;
     --font-small: #555;
+    --svg-search-color: #817979f7;
 }
 
 *,
@@ -69,11 +72,16 @@ nav {
     position: relative;
 }
 
-input {
+.nav-actions > .nav-form > input {
     height: 2rem;
     border-radius: 4px;
     border-width: 1px;
-    padding: 0 0 0 1.9rem;
+    padding: 0 0 0 1.6rem;
+    color: var(--font-color-light);
+}
+
+input::placeholder {
+    color: var(--input-placeholder-color);
 }
 
 button {
@@ -82,7 +90,7 @@ button {
     border: none;
     border-radius: 4px;
     background-color: var(--buttons-color);
-    color: white;
+    color: var(--font-color-light);
     cursor: pointer;
 }
 
@@ -91,8 +99,9 @@ button {
     left: 0.7rem;
     width: 1.2rem;
     height: 1.2rem;
-    stroke: var(--font-small);   
+    stroke: var(--svg-search-color);
     pointer-events: none;
+    z-index: 2;
 }
 
 .nav-buttons:hover {
@@ -103,31 +112,59 @@ button {
 
 .Encabezado {
     position: relative;
-    display: flex;
+    display: flex;;
+    margin-top: 0.5rem;
 }
 
 .Encabezado-elementos {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
     position: absolute;
     top: 30%;
-    left: 3rem;
+    left: 8%;
+    max-width: 50vw;
+}
+
+.Encabezado-elementos > h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: 2.5rem;
+}
+
+.Encabezado-elementos > p {
+    font-size: 1.2rem;
+    font-weight: 200;
+}
+
+.Encabezado-elementos > .actions-encabezado > form > input {
+    height: 2rem;
+    width: 19.5rem;
+    border-radius: 4px;
+    border-width: 1px;
+    padding: 1.2rem 2.2rem;
+    color: var(--font-color-light);
+    background-color: var(--input-color);
+    opacity: 0.9;
 }
 
 .imagen-encabezado {
     width: 90%;
-    height: 300px;
+    height: 400px;
     margin: 0 auto;
     margin-top: 0.5rem;
     border-radius: 8px;
     object-fit: cover;
 }
 
-.actions-encabezado {
+.actions-encabezado > form {
     position: absolute;
 }
 
 .actions-encabezado > form > .svg-icon-search {
-    top: 20%;
-    left: 3%;
+    top: 24%;
+    left: 2.5%;
 }
 
 .Empleos-Destacados > h2 {
