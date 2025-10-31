@@ -1,10 +1,9 @@
 :root {
     /* Paleta de colores principal */
 
-    --primary-color: #1173d4;
     --background-dark: #101922;
     --background-light: #f6f7f8;
-
+    
     /*Buttons and inputs*/
     --buttons-color: #007BFF;
     --buttons-hover-color: #0056b3;
@@ -12,10 +11,12 @@
     --input-placeholder-color: #CDC8C5;
 
     /*Font colors*/
+    --links: #1173d4;
     --font-color-light: #f6f7f8;
     --font-color-dark: #101922;
     --font-small: #555;
     --svg-search-color: #817979f7;
+    --sub-title-color: #a4a0a0;
 }
 
 *,
@@ -141,7 +142,7 @@ button {
 .Encabezado-elementos > .actions-encabezado > form > input {
     height: 2rem;
     width: 19.5rem;
-    border-radius: 4px;
+    border-radius: 6px;
     border-width: 1px;
     padding: 1.2rem 2.2rem;
     color: var(--font-color-light);
@@ -186,6 +187,13 @@ button {
     left: 2.5%;
 }
 
+/*EMPLEOS DESTACADOS*/
+
+.Empleos-Destacados {
+    width: 99%;
+    margin: 0 auto;
+}
+
 .Empleos-Destacados > h2 {
     margin: 2rem 0 0 3.5rem;
 
@@ -195,8 +203,60 @@ button {
     display: flex;
     flex-direction: row;
     align-items: center;
+    gap: 1.5rem;
     margin: 1rem 3.5rem;
     padding-bottom: 50vh;
+}
+
+.Article-Empleos-Destacados > article {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding-bottom: 1rem;
+    border: 1px solid var(--font-small);
+    border-radius: 8px;
+    background-color: #18212D;
+    overflow: hidden;
+}
+
+.Article-Empleos-Destacados > article > img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.info-articles,
+.info-articles h3,
+.info-articles p,
+.info-articles a {
+    padding: 0.4rem 0.8rem;
+}
+
+.info-articles h3 {
+    font-weight: 600;
+}
+.info-articles p {
+    color: var(--sub-title-color);
+    text-align: justify;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+}
+
+.info-articles a {
+    position: relative;
+    text-decoration: none;
+    color: var(--links);
+    font-size: 0.9rem;
+    font-weight: 500;
+
+}
+.info-articles svg {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    stroke: var(--links);
 }
 
 /*FOOTER*/
